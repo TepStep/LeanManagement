@@ -1,5 +1,8 @@
 package com.tepstep;
 
+
+import com.tepstep.menu.Start;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,9 +16,16 @@ public class Window {
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Lean Management");
-        frame.pack();
-        frame.setVisible(true);
+
         frame.setBackground(Color.white);
         frame.setSize(1200,800);
+
+        Start menu = new Start();
+        menu.startowa();
+        panel.add(menu.getview1());
+
+
+        frame.setVisible(true);
+
     }
 }
