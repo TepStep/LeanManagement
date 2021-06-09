@@ -13,6 +13,11 @@ public class Start {
         menu.setLayout(new GridLayout(0,1));
         menu.setSize(1200,800);
 
+        JLabel textfront = new JLabel();
+        textfront.setText("Tekst");
+        menu.add(textfront, "Tekst");
+
+
         JButton button = new JButton();
         button.setBackground(Color.red);
         button.setText("Genarate Issue Raport");
